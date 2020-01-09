@@ -195,6 +195,7 @@ class UBN_Private {
 	 *    @type string $container   The container for the note.
 	 *                              It can be:
 	 *                              "p"
+	 *				"li"
 	 *                              "div"
 	 *                              "span"
 	 *    @type string $id          The ID selectors, comma separated.
@@ -366,6 +367,13 @@ class UBN_Private {
 				$containers = array(
 					'open'  => '<div',
 					'close' => '</div>',
+				);
+				break;
+				
+			case 'li':
+				$containers = array(
+					'open'  => '<li',
+					'close' => '</li>',
 				);
 				break;
 
